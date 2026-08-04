@@ -11,4 +11,4 @@ Settings → Pages → Source: `main` / `/ (root)`.
 
 ## DNS (apex domain)
 A records → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
-CNAME     → www → <username>.github.io
+CNAME     → www → phylaxos.github.io
