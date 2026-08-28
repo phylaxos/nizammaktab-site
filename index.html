@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nizam Maktab — Fee collection &amp; parent notifications for Pakistani schools</title>
-<meta name="description" content="School management software built for Pakistan. Fee challans, online payments, SMS reminders to parents, attendance and a parent portal — in English and Urdu.">
+<meta name="description" content="School management software built for Pakistan. Fee challans, payment records, email reminders to parents, attendance and a parent portal — in English and Urdu.">
 <meta name="theme-color" content="#1e1b4b">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nizammaktab.online/">
 <meta property="og:title" content="Nizam Maktab — School management built for Pakistan">
-<meta property="og:description" content="Fee challans, online payments, SMS reminders to parents, attendance and a parent portal. English and Urdu.">
+<meta property="og:description" content="Fee challans, payment records, email reminders to parents, attendance and a parent portal. English and Urdu.">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234f46e5'/><path d='M50 24 18 40l32 16 32-16z' fill='white'/><path d='M30 50v16c0 6 9 10 20 10s20-4 20-10V50' fill='none' stroke='white' stroke-width='7' stroke-linecap='round'/></svg>">
 
@@ -80,6 +81,11 @@
   .card{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:var(--bg)}
   .card h3{font-size:16.5px;margin-bottom:8px;font-weight:700}
   .card p{color:var(--muted);font-size:14.6px}
+  .card h3{display:flex;align-items:center}
+  .soon{margin-left:auto;margin-inline-start:12px;flex:none;padding:3px 9px;border-radius:999px;
+        background:var(--brand-soft);color:var(--brand);
+        font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+        white-space:nowrap}
   .ico{width:38px;height:38px;border-radius:10px;background:var(--brand-soft);color:var(--brand);
        display:grid;place-items:center;margin-bottom:14px}
 
@@ -120,6 +126,8 @@
     <nav class="nav-links">
       <a href="#features">Features</a>
       <a href="#pakistan">Why us</a>
+      
+      <a href="https://app.nizammaktab.online/accounts/login/">Sign in</a>
       <a class="btn btn-primary" href="#demo">Book a demo</a>
     </nav>
   </div>
@@ -131,15 +139,13 @@
     <h1>Fees collected. Parents informed.</h1>
     <div class="name-ur ur" lang="ur" dir="rtl">نظام مکتب</div>
     <p class="lede">
-      Nizam Maktab replaces the register, the cash box and the endless phone calls.
-      Issue fee challans, take payments, and send every parent an SMS in Urdu —
-      from one screen, on any connection.
+      Nizam Maktab replaces the register, the cash box and the endless phone calls. Issue fee challans, record payments, and email every parent — from one screen, on any connection.
     </p>
     <div class="cta-row">
       <a class="btn btn-primary btn-lg" href="#demo">Book a free demo</a>
       <a class="btn btn-ghost btn-lg" href="#features">See what it does</a>
     </div>
-    <p class="note">No app to install for parents · Works on slow 3G · English &amp; اردو</p>
+    <p class="note">No app to install for parents · English &amp; اردو</p>
   </div>
 </div>
 
@@ -155,7 +161,7 @@
       </div>
       <div class="pair">
         <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-        <div><b>Stop chasing defaulters by phone</b><span>Automatic SMS reminders before the due date and after it passes.</span></div>
+        <div><b>Stop chasing defaulters by phone</b><span>Automatic email reminders before the due date and after it passes.</span></div>
       </div>
       <div class="pair">
         <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
@@ -184,14 +190,14 @@
 
       <div class="card">
         <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18M6 19h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3Z"/></svg></div>
-        <h3>Payments that work here</h3>
-        <p>Cash at the desk, bank challan, or online through the rails Pakistani parents already use — JazzCash, Easypaisa, Safepay and Raast.</p>
+        <h3>Payments <span class="soon">Online soon</span></h3>
+        <p>Take cash at the desk and print bank challans today — every receipt lands in the ledger as it is taken. Online payment through the rails Pakistani parents already use, JazzCash, Easypaisa, Safepay and Raast, is on the way.</p>
       </div>
 
       <div class="card">
-        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 1 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></div>
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l8.9 5.9a2 2 0 0 0 2.2 0L23 8"/><path d="M5 19h14a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3Z"/></svg></div>
         <h3>Parent notifications</h3>
-        <p>Fee reminders, payment receipts and absence alerts by SMS — sent through local Pakistani providers, so the cost per message stays in paisas.</p>
+        <p>Fee reminders, payment receipts and absence alerts by email — delivered reliably, with every message recorded so the school can see exactly what went out and to whom.</p>
       </div>
 
       <div class="card">
@@ -209,7 +215,7 @@
       <div class="card">
         <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2 7-7 7 7 2 2"/><path d="M5 10v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10"/></svg></div>
         <h3>Parent portal</h3>
-        <p>Parents log in with their phone number and an SMS code — no password to forget, no app to install. Fees, attendance and remarks, in Urdu.</p>
+        <p>Parents sign in with their phone number or email and a password — no app to install. Fees, attendance and remarks, in Urdu.</p>
       </div>
 
     </div>
@@ -223,20 +229,20 @@
     <p class="sub">Imported school systems assume card payments, fast internet and English-speaking parents. None of that holds in most of Pakistan.</p>
     <div class="grid">
       <div class="card">
-        <h3>اردو, properly</h3>
+        <h3><span class="ur" lang="ur" dir="rtl">اردو</span>, properly</h3>
         <p>The whole interface switches to Urdu with correct right-to-left layout — not a half-translated menu. Parents read notices in the language they speak.</p>
       </div>
       <div class="card">
-        <h3>Local payment rails</h3>
-        <p>Stripe does not operate here. We integrate the wallets and bank rails parents already have on their phones.</p>
+        <h3>Local payment rails <span class="soon">Soon</span></h3>
+        <p>Stripe does not operate here. We are building on the wallets and bank rails parents already have on their phones, not the ones foreign software assumes.</p>
       </div>
       <div class="card">
-        <h3>SMS priced in rupees</h3>
-        <p>Messages go through Pakistani SMS providers instead of international gateways — the difference on a school's monthly bill is substantial.</p>
+        <h3>Nothing to install</h3>
+        <p>Parents need no app and no smartphone storage — a link in an email opens the portal in whatever browser they already have.</p>
       </div>
       <div class="card">
-        <h3>Light on bandwidth</h3>
-        <p>Pages are a few kilobytes and load on a weak 3G signal in a village school. No heavy dashboards that time out.</p>
+        <h3>Fast, even on a weak signal</h3>
+        <p>Pages open quickly even where the connection is poor. No waiting on a screen that never loads.</p>
       </div>
     </div>
   </div>
@@ -248,8 +254,7 @@
       <h2>See it on your own class list</h2>
       <p>Send us one class of students and we will set the system up so you can see your real fee challans before deciding.</p>
       <div class="cta-row" style="justify-content:center">
-        <!-- wa.me needs the international form with no '+' and no leading zero:
-             0318 5155488 -> 923185155488 -->
+        
         <a class="btn btn-primary btn-lg" href="https://wa.me/923185155488">WhatsApp 0318 5155488</a>
         <a class="btn btn-ghost btn-lg" href="mailto:info@nizammaktab.online">info@nizammaktab.online</a>
       </div>
@@ -267,6 +272,7 @@
   </div>
 </footer>
 
+<!-- Keeps the footer year correct without a rebuild each January. -->
 <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
