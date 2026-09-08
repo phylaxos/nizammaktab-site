@@ -1,0 +1,6 @@
+# nizammaktab.online
+
+User-agent: *
+Allow: /
+
+Sitemap: https://nizammaktab.online/sitemap.xml
