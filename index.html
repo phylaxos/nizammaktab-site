@@ -8,6 +8,11 @@
 <meta name="description" content="School management software built for Pakistan. Fee challans, payment records, email reminders to parents, attendance and a parent portal — in English and Urdu.">
 <meta name="theme-color" content="#0f5c4a">
 
+<!-- One address for one page. Without this, www/non-www, the trailing slash
+     and every ?utm_ campaign link read as separate pages and split whatever
+     authority the site earns. -->
+<link rel="canonical" href="https://nizammaktab.online/">
+
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nizammaktab.online/">
 <meta property="og:title" content="Nizam Maktab — School management built for Pakistan">
@@ -129,6 +134,65 @@
   footer{padding:34px 0 46px;color:var(--muted);font-size:13.8px}
   .foot{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
 </style>
+
+<!-- Structured data. This is what turns a plain blue link for "nizammaktab"
+     into a result Google can present as an actual product and company.
+     Deliberately no offers/price and no aggregateRating: the page shows
+     neither, and schema that outruns the visible page is a manual-action
+     risk, not a shortcut. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://nizammaktab.online/#organization",
+      "name": "Nizam Maktab",
+      "url": "https://nizammaktab.online/",
+      "logo": "https://nizammaktab.online/logo-primary.png",
+      "email": "info@nizammaktab.online",
+      "areaServed": { "@type": "Country", "name": "Pakistan" },
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "telephone": "+92-318-5155488",
+        "email": "info@nizammaktab.online",
+        "areaServed": "PK",
+        "availableLanguage": ["en", "ur"]
+      }]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nizammaktab.online/#website",
+      "url": "https://nizammaktab.online/",
+      "name": "Nizam Maktab",
+      "publisher": { "@id": "https://nizammaktab.online/#organization" },
+      "inLanguage": ["en", "ur"]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Nizam Maktab",
+      "url": "https://nizammaktab.online/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "School Management System",
+      "operatingSystem": "Web browser",
+      "inLanguage": ["en", "ur"],
+      "publisher": { "@id": "https://nizammaktab.online/#organization" },
+      "description": "School management software built for Pakistan: fee challans, payment records, email reminders to parents, attendance, online classes and a bilingual parent portal.",
+      "featureList": [
+        "Fee invoices and bulk generation",
+        "Printable three-part fee challans",
+        "Cash and payment records",
+        "Email reminders to parents",
+        "Attendance register and reports",
+        "Parent portal in English and Urdu",
+        "School noticeboard",
+        "Online classes"
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
