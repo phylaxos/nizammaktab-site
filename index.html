@@ -122,6 +122,26 @@
   .pair b{display:block;font-size:15px;margin-bottom:2px}
   .pair span{color:var(--muted);font-size:14.2px}
 
+  /* ---------- dashboards ---------- */
+  .devices{display:flex;gap:48px;align-items:flex-end;justify-content:center;flex-wrap:wrap}
+  .devices figure{margin:0;text-align:center;flex:1 1 420px;max-width:640px}
+  .devices figure.phone{flex:0 0 250px}
+  .devices img{display:block;width:100%;height:auto}
+  .devices figcaption{margin-top:20px;color:var(--muted);font-size:14.5px}
+
+  .laptop-screen{background:#0f172a;border-radius:16px 16px 0 0;padding:14px 14px 0;
+                 border:1px solid var(--line);border-bottom:0}
+  .laptop-screen img{border-radius:8px 8px 0 0}
+  .laptop-deck{height:18px;background:linear-gradient(180deg,#e2e8f0,#94a3b8);
+               border-radius:0 0 16px 16px;border:1px solid var(--line);border-top:0;
+               position:relative;box-shadow:0 10px 24px -18px rgba(15,23,42,.55)}
+  .laptop-deck::before{content:"";position:absolute;left:50%;top:4px;transform:translateX(-50%);
+                       width:110px;height:5px;background:#64748b;border-radius:0 0 7px 7px}
+
+  .phone-screen{background:#0f172a;border-radius:34px;padding:11px;border:1px solid var(--line);
+                box-shadow:0 18px 40px -18px rgba(15,23,42,.45)}
+  .phone-screen img{border-radius:24px}
+
   /* ---------- final cta ---------- */
   .final{background:var(--brand-dark);color:#fff;border-radius:18px;padding:52px 34px;text-align:center;margin:0 0 8px}
   .final h2{color:#fff}
@@ -319,6 +339,25 @@
         <p>Post a notice to the whole school or one class — parents and staff see it on their own account, and it can go out by email in the same step. Separately, every fee change, cancelled invoice and sign-in is recorded with who did it and when.</p>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<section id="screens">
+  <div class="wrap">
+    <span class="kicker">Inside the app</span>
+    <h2>One dashboard, any screen</h2>
+    <p class="sub">The same system works the way the school office does — and the way parents do.</p>
+    <div class="devices">
+      <figure>
+        <div class="laptop-screen"><img src="/dashboard.png" alt="Nizam Maktab desktop dashboard showing the fee dashboard, class list and recent payments" width="1873" height="950"></div>
+        <div class="laptop-deck"></div>
+        <figcaption>The full dashboard for the school office</figcaption>
+      </figure>
+      <figure class="phone">
+        <div class="phone-screen"><img src="/dashboard-mob.jpeg" alt="Nizam Maktab mobile dashboard on a phone" width="881" height="1599"></div>
+        <figcaption>What parents see on their phone</figcaption>
+      </figure>
     </div>
   </div>
 </section>
